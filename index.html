@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+   ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:whitesmoke;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color:grey;}
+
+ul.topnav li a.active {background-color: ;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+.input-field{
+  width: 25%;
+}
+.Terms{
+  text-decoration: underline;
+}
+.fa-star-o{
+  color: yellow;
+}
+</style>
+</head>
+<body>
+    <header id="navbar container">
+        <ul class="topnav">
+            <li><a class="active" href="#home">Stackoverflow<span style="color: yellow;">LITE</span></a></li>
+            <li class="right"><a href="#contact">Signup</a></li>
+            <li class="right"><a href="#about">Login</a></li>
+          </ul>
+          
+          
+
+    </header>
+    <section>
+        <div style="padding:0 16px; text-align: center;">
+            <h2>Stackoverflow<i class="fa fa-star-o" aria-hidden="true"></i><span style="color: yellow;">LITE</span> </h2>
+            <p>Create an account.</p>
+            <form>
+            <input class="input-field" type="text" placeholder="Username..."> <br><br>
+            <input class="input-field" type="text" placeholder="Email address..."><br><br>
+            <input class="input-field" type="password" placeholder="password..."><br><br>
+            <input class="input-field" type="password" placeholder="confirm password..."><br>
+        </form>
+        <p>
+          By creating an account, you agree to our <a class="Terms" href="#" >Terms & Privacy.</a> 
+        </p>
+        <input type="button" value="Register" style="background-color: #2F4F4F;color: white;">
+        <p>
+          Already have an account? <a href="#" class="Terms">Sign in</a>
+        </p>
+          </div>
+
+    </section>
+</body>
+</html>

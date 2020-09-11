@@ -42,25 +42,61 @@ ul.topnav li.right {float: right;}
   text-decoration: underline;
 }
 .fa-star-o{
-  color: yellow;
+  color: orangered;
 }
+{
+      box-sizing: border-box;
+      }
+      
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+      
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 600px) {
+        .column {
+          width: 100%;
+        }
+      }
 </style>
 </head>
 <body>
     <header id="navbar container">
         <ul class="topnav">
-            <li><a class="active" href="#home">Stackoverflow<span style="color: yellow;">LITE</span></a></li>
-            <li class="right"><a href="#contact">Signup</a></li>
-            <li class="right"><a href="#about">Login</a></li>
+            <li><a class="active" href="#home"><i class="fa fa-stack-overflow" style="color:rebeccapurple ;" aria-hidden="true"></i> Stackoverflow<i class="fa fa-star-o" aria-hidden="true"></i><span style="color: orangered">LITE</span> </a></li>
+            <li class="right"><a href="#contact"><button style="background-color: orangered;color: white;">LOGIN</button> </a></li>
+            <li class="right"><a href="#about">PROFILE</a></li>
+            <li class="right"><a href="#about">QUESTIONS</a></li>
+            <li class="right"><a href="ask.html">ASK</a></li>
+            <li class="right"><a href="#about">HOME</a></li>
           </ul>
           
           
 
     </header>
-    <section>
-        <div style="padding:0 16px; text-align: center;">
-            <h2>Stackoverflow<i class="fa fa-star-o" aria-hidden="true"></i><span style="color: yellow;">LITE</span> </h2>
-            <p>Create an account.</p>
+    <section >
+      <div class="row container">
+      <div class="column" style="padding-left: 20px;">
+        <h2 style="font-size: xx-large;"> <strong>Ask The Experts</strong> </h2> <br>
+        There are 2 ducks in front of 2 other ducks. There are 2 ducks behind 2 other ducks. <br> There are 2 ducks beside 2 other ducks. How many ducks are there? <br>
+        <div style="padding-top: 10px;">
+        <input type="button" value="EXPLORE" style="background-color:orangered; color:white;border-radius: 5px; padding: 10px;">
+        <input type="button" value="HOW IT WORKS" style="padding: 10px;">
+      </div>
+      </div>
+        <div style="padding:0 16px" class="col-4">
+            <p style="color: rebeccapurple;font-size: xx-large;">Join our community</p>
             <form>
             <input class="input-field" type="text" placeholder="Username..."> <br><br>
             <input class="input-field" type="text" placeholder="Email address..."><br><br>
@@ -70,12 +106,20 @@ ul.topnav li.right {float: right;}
         <p>
           By creating an account, you agree to our <a class="Terms" href="#" >Terms & Privacy.</a> 
         </p>
-        <input type="button" value="Register" style="background-color: #2F4F4F;color: white;">
+        <input type="button" value="Register" style="background-color: orangered;color: white;border-radius: 5px;padding: 5px;width: 25%;">
         <p>
           Already have an account? <a href="#" class="Terms">Sign in</a>
         </p>
           </div>
-
+        </div>
     </section>
+    <section style="background-color: rebeccapurple;text-align: center;color: white;">
+      <p style="font-size: xxx-large;padding-top: 20px;"> Ask A Question</p>
+      <p style="padding-bottom: 30px;">
+       You can ask a question/post on our community by providing all the required details
+      </p>
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+    </section>
+     
 </body>
 </html>
